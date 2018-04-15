@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/xyk/xyk",
+    "pages/home/home",
+    
+    "pages/addCgi/addCgi",
+    "pages/xiaofei/xiaofei",
+    "pages/home/addcard"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "Wafer Quick Start",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#red",
+    "selectedColor": "#blue",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "img/white/home.png",
+        "selectedIconPath": "img/blue/home.png"
+      },
+      {
+        "pagePath": "pages/xyk/xyk",
+        "text": "信用卡管理",
+        "iconPath": "img/white/card.png",
+        "selectedIconPath": "img/blue/card.png"
+      },
+      {
+        "pagePath": "pages/addCgi/addCgi",
+        "text": "消费录入",
+        "iconPath": "img/white/xiao-fei.png",
+        "selectedIconPath": "img/blue/xiao-fei.png"
+      },
+      {
+        "pagePath": "pages/addCgi/addCgi",
+        "text": "还款提醒",
+        "iconPath": "img/white/ti-xing.png",
+        "selectedIconPath": "img/blue/ti-xing.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+<!--pages/home/addcard.wxml-->
+<text>pages/home/addcard.wxml</text>
+<form catchsubmit="formSubmit" catchreset="formReset">
+
+  <view class="page-section">
+    <view class="page-section-title">卡号</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <input class="weui-input" name="card_no" placeholder="请输入卡号" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">银行</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <input class="weui-input" name="yin_hang" placeholder="请输入银行" />
+        </view>
+      </view>
+    </view>
+  </view>
+    <view class="page-section">
+    <view class="page-section-title">信用额度</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <input class="weui-input" name="e_du" placeholder="请输入信用额度" />
+        </view>
+      </view>
+    </view>
+  </view>
+    <view class="page-section">
+    <view class="page-section-title">持卡人</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <input class="weui-input" name="chi_ka_ren" placeholder="请输入持卡人" />
+        </view>
+      </view>
+    </view>
+  </view>
+    <view class="page-section">
+    <view class="page-section-title">账单日</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <input class="weui-input" name="zhang_dan_ri" placeholder="请输入账单日" />
+        </view>
+      </view>
+    </view>
+  </view>
+    <view class="page-section">
+    <view class="page-section-title">还款日</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <input class="weui-input" name="huan_kuan_ri" placeholder="请输入还款日" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">备注</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <input class="weui-input" name="remark" placeholder="请输入备注" />
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="btn-area">
+    <button type="primary" formType="submit">保存</button>
+    <button formType="reset">重置</button>
+  </view>
+</form>

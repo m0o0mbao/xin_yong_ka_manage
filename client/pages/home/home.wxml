@@ -1,0 +1,160 @@
+<!--pages/home/home.wxml-->
+
+
+
+<!-- <text>pages/home/home.wxml</text> -->
+
+<text>我的信用卡</text>
+
+
+
+
+<scroll-view scroll-y="true" bindscrolltolower="scrollToLower" class="timeline">
+  <view class="tweet-container" wx:for="{{cards}}" wx:key="id">
+    <view class="top-container flex-row">
+      <image class="card-avatar" src="../../img/blue/card.png"></image>
+      <view class="user-container">
+        <text class="card-name">{{item.card_no}}</text>
+        <text class="card-num">{{item.card_no}}</text>
+        <!-- <text class="card-time">{{item.yin_hang}} {{item.chi_ka_ren}}</text> -->
+        <text class="card-time">还款日:{{item.huan_kuan_ri}}日  账单日: {{item.zhang_dan_ri}}日</text>
+       
+      </view>
+    </view>
+     
+    <view class="middle-container flex-column">
+      <text class="message-text">信用额度：{{item.xin_yong_e_du}}1</text>
+      <image class="message-image" data-original-pic="{{item.original_pic}}" wx:if="{{item.original_pic}}" src="{{item.original_pic}}" mode="aspectFill" catchtap="previewImage"></image>
+    </view>
+    <view class="bottom-container flex-row">
+      <view class="bottom-tool flex-row flex-rest-width">
+        <text bindtap='showhi' class="bottom-tool-text">Forward</text>
+      </view>
+      <view class="bottom-tool flex-row flex-rest-width">
+        <text class="bottom-tool-text">Comment</text>
+      </view>
+      <view class="bottom-tool flex-row flex-rest-width">
+        <text class="bottom-tool-text">Forward</text>
+      </view>
+    </view>
+  </view>
+
+
+
+
+  <view class="weui-btn-area">
+
+    <navigator open-type='navigate' url='./addcard'>
+      <button type='primary'>添加信用卡</button>
+    </navigator>
+ <navigator open-type='redirect' url='./addcard'>
+      <button type='primary'>switchTab</button>
+    </navigator>
+    
+  </view>
+
+
+</scroll-view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<view class='container'>
+
+  <!-- 按钮类型 -->
+<!-- <view class="button-sp-area">
+    <button class="weui-btn" type="primary" plain="true">按钮</button>
+    <button class="weui-btn" type="primary" disabled="true" plain="true">按钮</button>
+
+    <button class="weui-btn" type="default" plain="true">按钮</button>
+    <button class="weui-btn" type="default" disabled="true" plain="true">按钮</button>
+
+    <button class="weui-btn mini-btn" type="primary" size="mini">按钮</button>
+    <button class="weui-btn mini-btn" type="default" size="mini">按钮</button>
+    <button class="weui-btn mini-btn" type="warn" size="mini">按钮</button>
+  </view> 
+
+
+
+
+
+
+  
+  <view class="page">
+    <view class="page__hd">
+      <view class="page__title">Flex</view>
+      <view class="page__desc">Flex布局</view>
+    </view>
+    <view class="page__bd page__bd_spacing">
+      <view class="weui-flex">
+        <view class="weui-flex__item">
+          <view class="placeholder">weui</view>
+        </view>
+      </view>
+      <view class="weui-flex">
+        <view class="weui-flex__item">
+          <view class="placeholder">weui</view>
+        </view>
+        <view class="weui-flex__item">
+          <view class="placeholder">weui</view>
+        </view>
+      </view>
+      <view class="weui-flex">
+        <view class="weui-flex__item">
+          <view class="placeholder">weui</view>
+        </view>
+        <view class="weui-flex__item">
+          <view class="placeholder">weui</view>
+        </view>
+        <view class="weui-flex__item">
+          <view class="placeholder">weui</view>
+        </view>
+      </view>
+      <view class="weui-flex">
+        <view class="weui-flex__item">
+          <view class="placeholder">weui</view>
+        </view>
+        <view class="weui-flex__item">
+          <view class="placeholder">weui</view>
+        </view>
+        <view class="weui-flex__item">
+          <view class="placeholder">weui</view>
+        </view>
+        <view class="weui-flex__item">
+          <view class="placeholder">weui</view>
+        </view>
+      </view>
+      <view class="weui-flex">
+        <view>
+          <view class="placeholder">weui</view>
+        </view>
+        <view class="weui-flex__item">
+          <view class="placeholder">weui</view>
+        </view>
+        <view>
+          <view class="placeholder">weui</view>
+        </view>
+      </view>
+    </view>
+  </view>  
+
+
+</view> -->
